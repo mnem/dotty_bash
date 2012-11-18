@@ -1,10 +1,7 @@
 ############################################################################
 # Setup the prompt so that it shows the current branch when in a git directory.
 #
-# brew install git-extras
-source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/git-prompt.sh
-
+# Requires git-completion (and git-prompt if it exists) to be sourced somewhere
 local      BLUE="\[\e[0;34m\]"
 local       RED="\[\e[0;31m\]"
 local    YELLOW="\[\e[0;33m\]"
