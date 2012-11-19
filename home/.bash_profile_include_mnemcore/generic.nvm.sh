@@ -1,2 +1,2 @@
-. $HOME/nvm/nvm.sh
-[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+source_files $HOME/nvm/nvm.sh
+source_files $NVM_DIR/bash_completion

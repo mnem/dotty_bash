@@ -1,14 +1,17 @@
 #########################################
 # Source all passed files. Glob patterns
-# may be passed
+# may be passed. Ignores any files which
+# cannot be read.
 source_files() {
   local PASSED_PATH
   local SCRIPT
 
   for PASSED_PATH in "$@" ; do
     for SCRIPT in $PASSED_PATH ; do
-      if [ -r $SCRIPT ] ; then
-        source $SCRIPT
+      if [[ -r $SCRIPT ]] ; then
+        # Useful to uncomment if you want to see the load order
+        #echo "Sourcing: $SCRIPT"
+        . $SCRIPT
       fi
     done
   done

@@ -1,1 +1,1 @@
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+source_files $HOME/.tmuxinator/scripts/tmuxinator
