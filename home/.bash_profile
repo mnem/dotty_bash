@@ -19,7 +19,10 @@ source_files() {
 
 ########################################
 # Set up a somewhat promiscuous base search path
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/X11/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/bin
+
+PATH=$PATH:/usr/X11/bin
+PATH=$PATH:/usr/local/sbin
+PATH=$PATH:$HOME/bin
 
 ########################################
 # Source all the scripts to include
