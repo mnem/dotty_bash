@@ -21,7 +21,8 @@ source_files() {
 # Set up a somewhat promiscuous base search path
 
 PATH=$PATH:/usr/X11/bin
-PATH=$PATH:/usr/local/sbin
+PATH=/usr/local/sbin:$PATH
+PATH=/usr/local/bin:$PATH
 PATH=$PATH:$HOME/bin
 
 ########################################
