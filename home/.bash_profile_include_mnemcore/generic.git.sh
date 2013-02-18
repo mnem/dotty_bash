@@ -25,6 +25,6 @@ case $TERM in
   ;;
 esac
 
-PS1="${TITLEBAR}🎅  $RED\u@$GREEN$ON_RED\h$CLR_RESET$YELLOW\$(__git_ps1) $PURPLE\w$CLR_RESET\n🎄  \$ "
+PS1="${TITLEBAR}🌸  $RED\u@$GREEN$ON_RED\h$CLR_RESET$YELLOW\$(__git_ps1) $PURPLE\w$CLR_RESET\n🐣  \$ "
 PS2='> '
 PS4='+ '
