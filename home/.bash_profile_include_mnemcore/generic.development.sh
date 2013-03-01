@@ -1,6 +1,10 @@
-export ANDROID_SDK=$HOME/Developer/tools/android/sdk/current/platform-tools
-export ANDROID_NDK=$HOME/Developer/tools/android/ndk/current
-export JAVA_HOME=/Library/Java/Home
+export ANDROID_SDK=$HOME/Development/sdks/android/sdk/current
+PATH=$PATH:$ANDROID_SDK/platform-tools
+
+export ANDROID_NDK=$HOME/Development/sdks/android/ndk/current
+PATH=$PATH:$ANDROID_NDK
+
+export FLASCC=$HOME/Development/sdks/flascc/current
+
 export NODE_PATH=/usr/local/lib/node_modules
-export FLASCC=/Users/mnem/Developer/tools/flascc/sdk
-export FLEX='/Applications/Adobe Flash Builder 4.6/sdks/4.6.0'
+
