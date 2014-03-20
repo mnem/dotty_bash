@@ -1,3 +1,5 @@
+########################################
+# Wat, I don't even
 shopt -s extglob
 
 have()
@@ -9,7 +11,7 @@ have()
     have="yes"
 }
 
-#########################################
+########################################
 # Source all passed files. Glob patterns
 # may be passed. Ignores any files which
 # cannot be read.
@@ -30,7 +32,6 @@ source_files() {
 
 ########################################
 # Set up a somewhat promiscuous base search path
-
 PATH=$PATH:/usr/X11/bin
 PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/bin:$PATH
@@ -38,15 +39,15 @@ PATH=$PATH:$HOME/bin
 
 ########################################
 # Source all the scripts to include
-source_files "$HOME/.bash_profile_include*/`uname -n`.*.sh"
-source_files "$HOME/.bash_profile_include*/`uname -s`.*.sh"
 source_files "$HOME/.bash_profile_include*/generic.*.sh"
+source_files "$HOME/.bash_profile_include*/`uname -s`.*.sh"
+source_files "$HOME/.bash_profile_include*/`uname -n`.*.sh"
 
 ########################################
 # Source all the scripts setting up aliases
-source_files "$HOME/.bash_aliases*/`uname -n`.*.sh"
-source_files "$HOME/.bash_aliases*/`uname -s`.*.sh"
 source_files "$HOME/.bash_aliases*/generic.*.sh"
+source_files "$HOME/.bash_aliases*/`uname -s`.*.sh"
+source_files "$HOME/.bash_aliases*/`uname -n`.*.sh"
 
 ########################################
 # Finally, export any path changes
