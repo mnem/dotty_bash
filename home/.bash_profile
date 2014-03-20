@@ -1,3 +1,14 @@
+shopt -s extglob
+
+have()
+{
+    unset -v have
+    # Completions for system administrator commands are installed as well in
+    # case completion is attempted via `sudo command ...'.
+    PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin type $1 &>/dev/null &&
+    have="yes"
+}
+
 #########################################
 # Source all passed files. Glob patterns
 # may be passed. Ignores any files which

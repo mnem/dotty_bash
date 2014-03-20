@@ -17,5 +17,6 @@
 	tool = Kaleidoscope
 [core]
 	excludesfile = /Users/mnem/.gitignore_global
+	editor = subl --wait
 [include]
 	path = .gitconfig_user
