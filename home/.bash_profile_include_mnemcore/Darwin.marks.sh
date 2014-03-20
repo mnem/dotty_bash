@@ -13,7 +13,8 @@ function unmark {
     rm -i "$MARKPATH/$1"
 }
 function marks {
-    ls -l "$MARKPATH" | tail -n +2 | awk '{printf "%-15s -> %s\n", $9,$11}'
+    # List | snip the total | use awk to format the columns
+    \ls -l "$MARKPATH" | tail -n +2 | awk '{printf "%-15s -> %s\n", $9,$11}'
 }
 
 _completemarks() {
