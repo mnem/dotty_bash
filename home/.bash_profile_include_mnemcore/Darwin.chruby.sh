@@ -1,4 +1,4 @@
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 
 # Default ruby
-chruby 2.1.1
+chruby 2.1.2
