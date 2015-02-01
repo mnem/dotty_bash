@@ -25,8 +25,8 @@ case $TERM in
   ;;
 esac
 
-THEME_A='🌸'
-THEME_B='🐝'
+THEME_A=' '
+THEME_B=' '
 
 PS1="${TITLEBAR}$THEME_A  $RED\u@$GREEN$ON_RED\h$CLR_RESET$YELLOW\$(__git_ps1) $PURPLE\w$CLR_RESET\n$THEME_B  \$ "
 PS2='> '
