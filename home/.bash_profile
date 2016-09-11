@@ -11,6 +11,11 @@ have()
     have="yes"
 }
 
+run_if_available()
+{
+  command -v $1 >/dev/null && $@
+}
+
 ########################################
 # Source all passed files. Glob patterns
 # may be passed. Ignores any files which
