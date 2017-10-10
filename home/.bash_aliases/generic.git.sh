@@ -1,1 +1,3 @@
-alias git-branch-tidy="git branch --merged | grep -v '^* ' | xargs -p git branch --delete"
+alias gs="git status"
+alias gd="git diff"
+alias gl="git log"
