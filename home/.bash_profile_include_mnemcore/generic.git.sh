@@ -32,3 +32,8 @@ THEME_B=''
 PS1="${TITLEBAR}$RED\u@$GREEN$ON_WHITE\h$CLR_RESET$YELLOW\$(__git_ps1) $PURPLE\w$CLR_RESET\n\$ "
 PS2='> '
 PS4='+ '
+
+alias gs='git status'
+alias gl='git log'
+alias gd='git diff'
+alias gdt='git difftool'

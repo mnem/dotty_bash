@@ -24,4 +24,7 @@ _completemarks() {
   return 0
 }
 
-complete -F _completemarks jump unmark
+alias j=jump
+
+complete -F _completemarks jump unmark j
+
