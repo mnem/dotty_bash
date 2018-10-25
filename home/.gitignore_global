@@ -13,3 +13,6 @@ Icon
 
 # Redis dumps
 dump.rdb
+
+# idea projects
+.idea/
